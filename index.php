@@ -1,7 +1,7 @@
 <?php
 session_start();
 session_regenerate_id(true);
-$conexion = mysqli_connect("localhost", "root", "", "bd_app_inseguro");
+$conexion = mysqli_connect("localhost", "root", "Rootadmin@2023", "bd_app_inseguro");
 mysqli_set_charset($conexion, 'utf8');
 $conexion->query("SET time_zone = 'America/Guatemala'");
 if (!$conexion) {
