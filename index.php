@@ -5,7 +5,7 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_app_inseguro");
 mysqli_set_charset($conexion, 'utf8');
 $conexion->query("SET time_zone = 'America/Guatemala'");
 if (!$conexion) {
-	header("Location: login.php?errorConexión fallida con la base de datos");
+	header("Location: login.php?error=Conexión fallida con la base de datos");
 }
 
 #Salir si sesión no está iniciada
